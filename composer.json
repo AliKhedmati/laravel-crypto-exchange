@@ -1,0 +1,35 @@
+{
+    "name": "alikhedmati/laravel-crypto-exchange",
+    "description": "Laravel Cryptocurrencies Exchange.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alikhedmati\\CryptoExchange\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ali Khedmati",
+            "email": "ali@khedmati.ir"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8",
+        "laravel/framework": "^9",
+        "guzzlehttp/guzzle": "^7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alikhedmati\\CryptoExchange\\CryptoExchangeServiceProvider"
+            ],
+            "aliases": {
+                "SMS": "Alikhedmati\\CryptoExchange\\Facades\\CryptoExchange"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.6"
+    }
+}
