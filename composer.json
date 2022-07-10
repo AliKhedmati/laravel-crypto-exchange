@@ -5,7 +5,10 @@
     "autoload": {
         "psr-4": {
             "Alikhedmati\\CryptoExchange\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
     },
     "authors": [
         {
